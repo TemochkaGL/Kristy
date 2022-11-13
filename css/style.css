@@ -7,6 +7,10 @@
 	--onyx: #3d3d3d;
 }
 
+.none{
+	display: none;
+}
+
 .light-theme {
   --bg: var(--pink);
   --fontColor: var(--black);
@@ -152,4 +156,82 @@ footer{
 	height: auto;
 	filter: invert(90%);
 	margin-bottom: auto;
+}
+
+li {
+	font-size: 18pt;
+	margin-bottom: 14px;
+    list-style-type: none; /* Убираем маркеры у списка */
+   }
+   li:before {
+    content: "🦊"; /* Добавляем в качестве маркера символ */
+   }
+
+
+
+   /* МЭЙН */
+main{
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main div{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 0.8em;
+	transition: transform 0.2s ease-in;
+	margin-bottom: 25px;
+
+}
+
+main a{
+	text-decoration: none;
+	display: block;
+}
+
+main div.kartinka:hover{
+	transform: scale(1.005);
+}
+
+main div img{
+	max-width: 90%;
+	margin-top: 10px;
+	box-shadow: 0px 10px 22px var(--shapka);
+	border: dashed 5px #017aaf ;
+
+}
+
+.list{
+	padding-left: 5%;
+	display: block;
+	
+}
+
+.gal{
+	margin-left: auto;
+	margin-right: auto;
+	hyphens:auto;
+	padding: auto;
+	display: flex;
+	flex-direction: column;
+}
+#s1{
+	border: none;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2{
+	text-align: center;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gal h2{
+	color: brown;
 }
