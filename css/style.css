@@ -197,6 +197,7 @@ main div.kartinka:hover{
 }
 
 main div img{
+	object-fit: cover;
 	max-width: 90%;
 	margin-top: 10px;
 	box-shadow: 0px 10px 22px var(--shapka);
